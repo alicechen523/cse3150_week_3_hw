@@ -86,7 +86,13 @@ int main(int argc, char* argv[]) {
 		int old_gpa_idx;
 		cout << "Enter index to change: ";
 		cin >> old_gpa_idx;
-			    
+		
+		if (old_gpa_idx >= size) {
+			cout << "Index out of bounds" << endl;
+			break;
+		}
+
+
 		double new_gpa;
 		cout << "Enter new GPA: ";
 		cin >> new_gpa;
