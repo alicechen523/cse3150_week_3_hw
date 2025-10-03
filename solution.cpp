@@ -87,7 +87,7 @@ int main(int argc, char* argv[]) {
 		cout << "Enter index to change: ";
 		cin >> old_gpa_idx;
 		
-		if (old_gpa_idx >= size) {
+		if (old_gpa_idx >= size || old_gpa_idx < 0) {
 			cout << "Index out of bounds" << endl;
 			break;
 		}
@@ -129,7 +129,7 @@ int main(int argc, char* argv[]) {
     // TODO: free memory 
     if (size > 0) {
     	for (int i = 0; i < size; i++) {
-		delete names[i];
+		delete[] names[i];
 	}
     }
     return 0;
