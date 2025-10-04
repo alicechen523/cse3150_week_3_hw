@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #include <cstring>   // for strlen, strcpy
 
 using std::cout, std::endl, std::cin, std::string;
